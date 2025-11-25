@@ -7,6 +7,11 @@ using namespace std;
 // Функция чтения из файла в вектор
 void ReadFile(vector<string>& vector_stroka)
 {
+    ifstream file("Test.txt");
+    if (!file)
+    {
+        cout << "Error" << endl;
+    }
 
 }
 
