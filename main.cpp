@@ -24,6 +24,13 @@ void Print(vector<string>& vector_stroka)
 // Функция записи в файл
 void WriteFile(vector<string>& vector_stroka)
 {
+    ofstream file("ofTest.txt");
+
+    for (const auto& stroka : vector_stroka)
+    {
+        file << stroka << endl;
+    }
+    file.close();
 
 }
 
