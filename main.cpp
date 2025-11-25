@@ -7,18 +7,18 @@ using namespace std;
 // Функция чтения из файла в вектор
 void ReadFile(vector<string>& vector_stroka)
 {
-    ifstream file("Test.txt");
-    if (!file)
+    ifstream file("Test.txt"); //открываем файл для чтения
+    if (!file) //проверяем открылся ли файл
     {
         cout << "Error" << endl;
     }
-    string line;
+    string line; //переменная для хранения одной строки
 
-    while (getline(file, line))
+    while (getline(file, line)) //построчное чтение из файла в переменную line
     {
-        vector_stroka.push_back(line);
+        vector_stroka.push_back(line); //добавляем прочитанную строку в вектор
     }
-    file.close();
+    file.close(); //закрываем файл
 
 }
 
