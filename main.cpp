@@ -13,6 +13,11 @@ void ReadFile(vector<string>& vector_stroka)
 // Функция вывода на экран
 void Print(vector<string>& vector_stroka)
 {
+    vector_stroka = {"Hello", "Hi"};
+    for (const auto& stroka : vector_stroka)
+    {
+        cout << stroka << endl;
+    }
 
 }
 
