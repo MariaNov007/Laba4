@@ -12,6 +12,13 @@ void ReadFile(vector<string>& vector_stroka)
     {
         cout << "Error" << endl;
     }
+    string line;
+
+    while (getline(file, line))
+    {
+        vector_stroka.push_back(line);
+    }
+    file.close();
 
 }
 
