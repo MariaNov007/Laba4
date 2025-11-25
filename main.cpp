@@ -13,10 +13,9 @@ void ReadFile(vector<string>& vector_stroka)
 // Функция вывода на экран
 void Print(vector<string>& vector_stroka)
 {
-    vector_stroka = {"Hello", "Hi"};
-    for (const auto& stroka : vector_stroka)
+    for (const auto& stroka : vector_stroka) //для каждой строки в векторе
     {
-        cout << stroka << endl;
+        cout << stroka << endl; //выводим строку на экран
     }
 
 }
@@ -24,11 +23,11 @@ void Print(vector<string>& vector_stroka)
 // Функция записи в файл
 void WriteFile(vector<string>& vector_stroka)
 {
-    ofstream file("ofTest.txt");
+    ofstream file("ofTest.txt"); //создаем новый файл
 
     for (const auto& stroka : vector_stroka)
     {
-        file << stroka << endl;
+        file << stroka << endl; //записываем строку в файл
     }
     file.close();
 
